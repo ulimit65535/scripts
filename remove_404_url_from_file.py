@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import requests
 import sys
 from urllib.parse import urlparse
+
+import requests
 
 IP="10.2.2.202"
 
@@ -14,7 +15,7 @@ if __name__ == '__main__':
         line = line.strip()
         urlp =urlparse(line)
         try:
-            response = requests.get("http://" + IP + urlp.path, headers={ "Host": urlp.netloc })
+            response = requests.get("http://" + IP + urlp.path, headers={"Host": urlp.netloc})
         except:
             pass
 
