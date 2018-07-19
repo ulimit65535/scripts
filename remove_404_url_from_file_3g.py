@@ -5,8 +5,8 @@ import requests
 import sys
 from urllib.parse import urlparse
 
-IP="10.2.2.202"
-#IP="10.2.2.61"
+#IP="10.2.2.202"
+IP="10.2.2.61"
 
 if __name__ == '__main__':
     filename = sys.argv[1]
